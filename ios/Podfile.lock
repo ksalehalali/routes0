@@ -606,6 +606,9 @@ PODS:
     - Firebase/Firestore (= 9.5.0)
     - firebase_core
     - Flutter
+  - connectivity_plus (0.0.1):
+    - Flutter
+    - ReachabilitySwift
   - device_info (0.0.1):
     - Flutter
   - Firebase/CoreOnly (9.5.0):
@@ -796,10 +799,13 @@ PODS:
     - nanopb/encode (= 2.30909.0)
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
+  - network_info_plus (0.0.1):
+    - Flutter
   - OrderedSet (5.0.0)
   - path_provider_ios (0.0.1):
     - Flutter
   - PromisesObjC (2.1.1)
+  - ReachabilitySwift (5.0.0)
   - share_plus (0.0.1):
     - Flutter
   - shared_preferences_ios (0.0.1):
@@ -812,6 +818,7 @@ PODS:
 
 DEPENDENCIES:
   - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
+  - connectivity_plus (from `.symlinks/plugins/connectivity_plus/ios`)
   - device_info (from `.symlinks/plugins/device_info/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_dynamic_links (from `.symlinks/plugins/firebase_dynamic_links/ios`)
@@ -829,6 +836,7 @@ DEPENDENCIES:
   - libphonenumber_plugin (from `.symlinks/plugins/libphonenumber_plugin/ios`)
   - location (from `.symlinks/plugins/location/ios`)
   - myfatoorah_flutter (from `.symlinks/plugins/myfatoorah_flutter/ios`)
+  - network_info_plus (from `.symlinks/plugins/network_info_plus/ios`)
   - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
   - share_plus (from `.symlinks/plugins/share_plus/ios`)
   - shared_preferences_ios (from `.symlinks/plugins/shared_preferences_ios/ios`)
@@ -858,11 +866,14 @@ SPEC REPOS:
     - nanopb
     - OrderedSet
     - PromisesObjC
+    - ReachabilitySwift
     - Toast
 
 EXTERNAL SOURCES:
   cloud_firestore:
     :path: ".symlinks/plugins/cloud_firestore/ios"
+  connectivity_plus:
+    :path: ".symlinks/plugins/connectivity_plus/ios"
   device_info:
     :path: ".symlinks/plugins/device_info/ios"
   firebase_core:
@@ -897,6 +908,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/location/ios"
   myfatoorah_flutter:
     :path: ".symlinks/plugins/myfatoorah_flutter/ios"
+  network_info_plus:
+    :path: ".symlinks/plugins/network_info_plus/ios"
   path_provider_ios:
     :path: ".symlinks/plugins/path_provider_ios/ios"
   share_plus:
@@ -912,6 +925,7 @@ SPEC CHECKSUMS:
   abseil: ebe5b5529fb05d93a8bdb7951607be08b7fa71bc
   BoringSSL-GRPC: 3175b25143e648463a56daeaaa499c6cb86dad33
   cloud_firestore: 7e123d5034b068e9a1fb32b2ad98a814c7f3e45d
+  connectivity_plus: 413a8857dd5d9f1c399a39130850d02fe0feaf7e
   device_info: d7d233b645a32c40dfdc212de5cf646ca482f175
   Firebase: 800f16f07af493d98d017446a315c27af0552f41
   firebase_core: 31872a49ffe0bf6f834e7044c7334e433536735a
@@ -946,9 +960,11 @@ SPEC CHECKSUMS:
   location: 3a2eed4dd2fab25e7b7baf2a9efefe82b512d740
   myfatoorah_flutter: 7db54f4e59b70038704a174c3511718e0d1746b1
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  network_info_plus: b78876159360f5580608c2cea620d6ceffabd0ad
   OrderedSet: aaeb196f7fef5a9edf55d89760da9176ad40b93c
   path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   share_plus: 056a1e8ac890df3e33cb503afffaf1e9b4fbae68
   shared_preferences_ios: 548a61f8053b9b8a49ac19c1ffbc8b92c50d68ad
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
