@@ -111,6 +111,8 @@ class _WalletScreenState extends State<WalletScreen> {
             ElevatedButton(
               onPressed: () async {
                 Navigator.pop(context);
+                Navigator.pop(context);
+
               },
               style: ButtonStyle(
                 backgroundColor:
@@ -336,7 +338,7 @@ class _WalletScreenState extends State<WalletScreen> {
                               color: Colors.white,
                               child: Center(
                                 child: QrImage(
-                                  data: "{\"lastToken\":\"${prefs.getString('lastToken')}\",\"paymentCode\":\"$codeDate${prefs.getString('lastPhone')!}\"\"userName\":\"${prefs.getString('userName')!}\"}",
+                                  data: "{\"lastToken\":\"${prefs.getString('lastToken')}\",\"paymentCode\":\"$codeDate${prefs.getString('lastPhone')!}\",\"userName\":\"${prefs.getString('userName')!}\"}",
                                   version: QrVersions.auto,
                                   size: 250.0.sp,
                                 ),
