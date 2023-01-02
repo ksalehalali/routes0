@@ -64,6 +64,8 @@ import FirebaseCore
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
             print("lat **************** \(location.coordinate.latitude)")
+                        print("lng **************** \(location.coordinate.longitude)")
+
             locationDataD = ["lat":location.coordinate.latitude,"lng":location.coordinate.longitude]
         }
 

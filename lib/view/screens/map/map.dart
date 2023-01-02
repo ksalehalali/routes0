@@ -362,13 +362,33 @@ class _MapState extends State<Map> {
                             position: google_maps.LatLng(
                                 locationController.myCorrectBuses[2]['latitude1'],
                                 locationController.myCorrectBuses[2]['longitude2']),
-                            markerId: google_maps.MarkerId("dropOffId"),
+                            markerId: google_maps.MarkerId(locationController.myCorrectBuses[2]['busID']),
                             onTap: () {
                               print(routeMapController.endStation['station']
                                   .toString());
                             })
                             : google_maps.Marker(
-                            markerId: google_maps.MarkerId("dropOffId")),
+                            markerId: google_maps.MarkerId(locationController.myCorrectBuses[2]['busID'])),
+
+                        //correct bus 2
+                        locationController.myCorrectBusesGot == true
+                            ? google_maps.Marker(
+                            icon: mapMarker,
+
+                            infoWindow: google_maps.InfoWindow(
+                                title:
+                                '${locationController.myCorrectBuses[1]['busID']}',
+                                snippet: locationController.myCorrectBuses[1]['busID']),
+                            position: google_maps.LatLng(
+                                locationController.myCorrectBuses[1]['latitude1'],
+                                locationController.myCorrectBuses[1]['longitude2']),
+                            markerId: google_maps.MarkerId(locationController.myCorrectBuses[1]['busID']),
+                            onTap: () {
+                              print(routeMapController.endStation['station']
+                                  .toString());
+                            })
+                            : google_maps.Marker(
+                            markerId: google_maps.MarkerId(locationController.myCorrectBuses[1]['busID'])),
 
                         //drop off marker
                         locationController.tripCreatedDone.value == true

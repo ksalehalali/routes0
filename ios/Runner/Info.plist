@@ -53,19 +53,12 @@
 	<string>need to get image for profile</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Routes App needs permission to use camera for two purpose ,which is to take a picture and use it as your profile picture and use camera for scan QRCode to pay for bus service.</string>
-
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Allow</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>This app needs access to location when in the background,This is to update your current location marker on Maps when starting a trip.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app needs access to location when open, This is to capture your current location so that the application can find the appropriate bus for your trip.</string>
-	<key>UIBackgroundModes</key>
-    <array>
-    	<string>fetch</string>
-    	<string>location</string>
-    </array>
-
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Can we use your microphone?</string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -75,6 +68,7 @@
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
+		<string>location</string>
 		<string>processing</string>
 		<string>remote-notification</string>
 	</array>

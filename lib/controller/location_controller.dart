@@ -167,6 +167,12 @@ class LocationController extends GetxController {
      }
   }
 
+  //calculate distance buses
+  var d = [];
+  void calculateDistanceToBuses(){
+
+  }
+
   // send user location signalr
   sendUserLocationSignalR(LocationModel location)async {
     print({"UserID":"${user.id}","Longitude":location.longitude,"Latitude":location.latitude});
@@ -265,6 +271,7 @@ class LocationController extends GetxController {
     startAddingPickUp.value = status;
     update();
   }
+
   void startAddingDropOffStatus(bool status){
     startAddingDropOff.value = status;
     update();
@@ -285,6 +292,7 @@ class LocationController extends GetxController {
     ));
     getMyFavAddresses();
   }
+
   void updatePickUpLocationAddress( Address pickUpAddress){
     pickUpLocation = pickUpAddress;
     update();
@@ -294,9 +302,11 @@ class LocationController extends GetxController {
     dropOffLocation = dropOffAddress;
     update();
   }
+
   updateLiveLoc(LatLng latLng){
     liveLocation.value = latLng;
   }
+
   void findPlace(String placeName) async {
     if (placeName.length > 1) {
 
